@@ -1,0 +1,97 @@
+Fri Mar 16 19:17:03 2018
+
+
+Moral links:
+
+    Marrying AltCoins_Rise and Bitcoin_Rise
+
+
+Triangulating prime component with 2 members:
+    Crypto_Regulation, Banks_using_Ripple
+This component is a clique of cost 4
+
+Triangulating prime component with 3 members:
+    Ripple_Rise, Bitcoin_Rise, AltCoins_Rise
+This component is a clique of cost 8
+
+Triangulating prime component with 3 members:
+    Crypto_Regulation, Bitcoin_Rise, AltCoins_Rise
+This component is a clique of cost 8
+
+
+Total cost of triangulation for all prime components is 20
+
+
+Elimination sequence:
+
+    Ripple_Rise
+    AltCoins_Rise
+    Bitcoin_Rise
+    Banks_using_Ripple
+    Crypto_Regulation
+
+
+Cliques:
+
+Clique 3, 2 members, table size = 4:
+    Crypto_Regulation, Banks_using_Ripple
+
+Clique 2, 3 members, table size = 8:
+    Crypto_Regulation, Bitcoin_Rise, AltCoins_Rise
+
+Clique 1, 3 members, table size = 8:
+    Bitcoin_Rise, AltCoins_Rise, Ripple_Rise
+
+Total clique table size: 20
+
+
+The junction forest:
+
+Creating junction tree with clique 3 as root ...
+
+Cliques 2 and 3 linked, separator has 1 member and table size = 2:
+    Crypto_Regulation
+
+Cliques 1 and 2 linked, separator has 2 members and table size = 4:
+    Bitcoin_Rise, AltCoins_Rise
+
+
+Assignment of potentials to cliques:
+
+    Node Crypto_Regulation assigned to clique 3
+    Node Ripple_Rise assigned to clique 1
+    Node Bitcoin_Rise assigned to clique 2
+    Node Banks_using_Ripple assigned to clique 3
+    Node AltCoins_Rise assigned to clique 2
+
+
+Checking conditional probability potentials:
+
+Warning: Conditional distributions for Ripple_Rise sum to different values:
+    min = 0.9
+    max = 1
+
+    No errors found
+
+
+Beliefs for chance nodes:
+
+    Crypto_Regulation:
+	<Crypto_Regulation>True 0.75
+	<Crypto_Regulation>False 0.25
+
+    Ripple_Rise:
+	<Ripple_Rise>True 0.672042
+	<Ripple_Rise>False 0.327958
+
+    Bitcoin_Rise:
+	<Bitcoin_Rise>True 0.675
+	<Bitcoin_Rise>False 0.325
+
+    Banks_using_Ripple:
+	<Banks_using_Ripple>True 0.65
+	<Banks_using_Ripple>False 0.35
+
+    AltCoins_Rise:
+	<AltCoins_Rise>True 0.6
+	<AltCoins_Rise>False 0.4

@@ -108,6 +108,7 @@ def split_queries(queries):
 
 class Node:
 
+    # Constructor
 	def _init_(self, name, parents, table):
 		self.name = name
 		self.parents = parents
@@ -127,9 +128,9 @@ def calculate_probability(queries_with_given, queries_without_given):
     denominator = 0
     total_probability = numerator / denominator
 
-    # Set denominator as cero if a querie has no given
-    # if !queries_with_given:
-    #     denominator = 0
+    # Set denominator as zero if a query has no given
+    if queries_with_given:
+        denominator = 0
 
     return total_probability
 
